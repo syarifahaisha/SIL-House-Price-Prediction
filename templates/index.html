@@ -5,146 +5,228 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>KBS - Stroke</title>
+    <title>SIL - House Price Prediction</title>
   </head>
   <body>
     <h1 class="text-center font-bold py-8 text-[20px]">
-      Knowledge Based System: Stroke Prediction
+      SIL: (Expert System) House Price Prediction
     </h1>
     <ul class="text-center pb-10">
-      <li>Haikal Lazuardi Fadil - 13519027</li>
       <li>Aisha Geubrina Yasmin - 13519089</li>
+      <li>Muhammad Fadli Gunardi - 13519130</li>
       <li>Rafi Raihansyah - 13519154</li>
     </ul>
     <form action="" class="ml-4">
       <div class="flex mb-4">
-        <div class="w-40">Gender</div>
-        <select
-          name="gender"
-          id="gender"
+        <div class="w-40">Date</div>
+        <input
+          name="date"
+          type = "date"
+          id="date"
           class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
+        ></input>
       </div>
 
       <div class="flex mb-4">
-        <div class="w-40">Age</div>
+        <div class="w-40">Bedrooms</div>
         <input
           type="number"
-          name="age"
-          id="age"
+          name="bedrooms"
+          id="bedrooms"
           class="ml-10 border-solid border-[1px] border-stone-400"
-          placeholder="21-100"
           min="21"
           max="100"
         />
       </div>
 
       <div class="flex mb-4">
-        <div class="w-40">Hypertension</div>
-        <select
-          name="hypertension"
-          id="hypertension"
-          class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="1">Yes</option>
-          <option value="0">No</option>
-        </select>
-      </div>
-
-      <div class="flex mb-4">
-        <div class="w-40">Heart Disease</div>
-        <select
-          name="heart_disease"
-          id="heart_disease"
-          class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="1">Yes</option>
-          <option value="0">No</option>
-        </select>
-      </div>
-
-      <div class="flex mb-4">
-        <div class="w-40">Ever Married</div>
-        <select
-          name="ever_married"
-          id="ever_married"
-          class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-      </div>
-
-      <div class="flex mb-4">
-        <div class="w-40">Work Type</div>
-        <select
-          name="work_type"
-          id="work_type"
-          class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="Private">Private</option>
-          <option value="Self-employed">Self Employed</option>
-          <option value="Govt_job">Goverment Job</option>
-          <option value="children">Children</option>
-          <option value="Never_worked">Never Worked</option>
-        </select>
-      </div>
-
-      <div class="flex mb-4">
-        <div class="w-40">Residence Type</div>
-        <select
-          name="residence_type"
-          id="residence_type"
-          class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="Urban">Urban</option>
-          <option value="Rural">Rural</option>
-        </select>
-      </div>
-
-      <div class="flex mb-4">
-        <div class="w-40">Avg. Glukose Level</div>
+        <div class="w-40">Bathrooms</div>
         <input
           type="number"
-          name="avg_glukose_level"
-          id="avg_glukose_level"
-          step="0.01"
+          name="bathrooms"
+          id="bathrooms"
           class="ml-10 border-solid border-[1px] border-stone-400"
-          placeholder="30-300"
+          step="0.01"
+          min="21"
+          max="100"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Sqft Living</div>
+        <input
+          type="number"
+          name="sqft_living"
+          id="sqft_living"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+          min="21"
+          max="100"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Sqft Lot</div>
+        <input
+          type="number"
+          name="sqft_lot"
+          id="sqft_lot"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+          min="21"
+          max="100"
+        />
+      </div>
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Floors</div>
+        <input
+          type="number"
+          name="floors"
+          id="floors"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+          min="21"
+          max="100"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Waterfront</div>
+        <input
+        type="number"
+        name="waterfront"
+        id="waterfront"
+        class="ml-10 border-solid border-[1px] border-stone-400"
+        min="21"
+        max="100"
+      />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">View</div>
+        <input
+          type="number"
+          name="view"
+          id="view"
+          class="ml-10 border-solid border-[1px] border-stone-400"
           min="30"
           max="300"
         />
       </div>
 
       <div class="flex mb-4">
-        <div class="w-40">BMI</div>
+        <div class="w-40">Condition</div>
         <input
           type="number"
-          name="bmi"
-          id="bmi"
-          step="0.1"
+          name="condition"
+          id="condition"
           class="ml-10 border-solid border-[1px] border-stone-400"
-          placeholder="10-100"
           min="10"
           max="100"
         />
       </div>
 
       <div class="flex mb-4">
-        <div class="w-40">Smoking Status</div>
-        <select
-          name="smoking_status"
-          id="smoking_status"
+        <div class="w-40">Grade</div>
+        <input
+          type="number"
+          name="grade"
+          id="grade"
           class="ml-10 border-solid border-[1px] border-stone-400"
-        >
-          <option value="formerly smoked">Formerly</option>
-          <option value="never smoked">Never</option>
-          <option value="smokes">Smokes</option>
-          <option value="Unknown">Unknown</option>
-        </select>
+          min="10"
+          max="100"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Sqft above</div>
+        <input
+          type="number"
+          name="sqft_above"
+          id="sqft_above"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Built basement</div>
+        <input
+          type="number"
+          name="sqft_basement"
+          id="sqft_basement"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Year Built</div>
+        <input
+          type="number"
+          name="yr_built"
+          id="yr_built"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Year Renovated</div>
+        <input
+          type="number"
+          name="yr_renovated"
+          id="yr_renovated"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Zipcode</div>
+        <input
+          type="number"
+          name="zipcode"
+          id="zipcode"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Latitude</div>
+        <input
+          type="number"
+          name="lat"
+          id="lat"
+          step="0.001"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Longitude</div>
+        <input
+          type="number"
+          name="long"
+          id="long"
+          step="0.001"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Sqft Living 15</div>
+        <input
+          type="number"
+          name="sqft_living15"
+          id="sqft_living15"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-40">Sqft Lot 15</div>
+        <input
+          type="number"
+          name="sqft_lot15"
+          id="sqft_lot15"
+          class="ml-10 border-solid border-[1px] border-stone-400"
+        />
       </div>
 
       <button
@@ -156,7 +238,7 @@
 
       {% block content %}
       <div class="flex mt-10">
-        <div>Result:</div>
+        <div>Predicted Price:</div>
 
         <div class="ml-2">
           {% if predicted_class %} {{predicted_class}} {% else %} ... {% endif
